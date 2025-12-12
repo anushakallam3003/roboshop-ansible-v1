@@ -51,7 +51,6 @@
         requirements: /app/requirements.txt
         executable: pip3
 
-
     - name: Copy payment service file
       ansible.builtin.copy:
         src: payment.service
