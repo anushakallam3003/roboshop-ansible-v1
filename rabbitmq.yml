@@ -23,7 +23,7 @@
         state: present
 
     - name: Start RabbitMQ Server service
-      ansible.builtin.systemd_services:
+      ansible.builtin.systemd_service:
         state: restarted
         name: rabbitmq-server
         enabled: true
