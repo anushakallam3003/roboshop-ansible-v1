@@ -51,7 +51,7 @@
         dest: /app
         remote_src: yes
 
-    - name: Install packages based on packages.json.
+    - name: Install packages based on package.json.
       community.general.npm:
         path: /app
 
