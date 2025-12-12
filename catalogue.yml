@@ -66,6 +66,14 @@
         login_host: mongodb-dev.rdevopsb72.online
         idempotent: yes
 
+    - name: Install MongoDB Shell
+      ansible.builtin.dnf:
+        name: mongodb-mongosh
+        state: present
+
+    - name: Load Master Data
+      ansible.builtin.shell: mongosh --host mongodb-dev.rdevopsb72.online </app/db/master-data.js
+
     - name: Copy catalogue service file
       ansible.builtin.copy:
         src: catalogue.services
