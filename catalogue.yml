@@ -60,11 +60,11 @@
         src: mongo.repo
         dest: /etc/yum.repos.d/mongo.repo
 
-    - name: Load Master Data
-      community.mongodb.mongodb_shell:
-        file: /app/db/master-data.js
-        login_host: mongodb-dev.rdevopsb72.online
-        idempotent: yes
+#    - name: Load Master Data
+ #     community.mongodb.mongodb_shell:
+  #      file: /app/db/master-data.js
+   #     login_host: mongodb-dev.rdevopsb72.online
+    #    idempotent: yes
 
     - name: Install MongoDB Shell
       ansible.builtin.dnf:
