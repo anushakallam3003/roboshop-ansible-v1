@@ -40,7 +40,7 @@
         path: /app
         state: absent
 
-    - name: create app directory
+    - name: Create app directory
       ansible.builtin.file:
         path: /app
         state: directory
