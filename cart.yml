@@ -57,7 +57,7 @@
         src: cart.service
         dest: /etc/systemd/system/cart.service
 
-    - name: Start cart service
+    - name: Start Cart service
       ansible.builtin.systemd_service:
         state: restarted
         name: cart
